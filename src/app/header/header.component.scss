@@ -1,0 +1,52 @@
+.header {
+  background: #ccc;
+  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+
+  &-toolbar {
+    background: transparent;
+  }
+
+  &-icon {
+    display: inline-block;
+    height: 50px;
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  &-menu {
+
+    a {
+      border-bottom: 1px solid transparent;
+      color: #000;
+      text-decoration: none;
+      padding: 0 2px 4px;
+      margin: 0 15px;
+      transition: border 0.2s;
+
+      &:hover {
+        border-bottom: 1px solid #333;
+      }
+
+      &.active {
+        border-bottom: 2px solid #333;
+
+      }
+
+      .mat-icon {
+        vertical-align: middle;
+      }
+      span {
+        font-weight: normal;
+        padding-left: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

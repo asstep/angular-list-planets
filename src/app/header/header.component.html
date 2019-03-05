@@ -1,0 +1,25 @@
+<header class="header">
+    <div class="container">
+        <mat-toolbar class="header-toolbar">
+            <mat-toolbar-row>
+            <span class="header-icon">
+                <img src="/img/icon.svg" alt="">
+            </span>
+                <span class="example-spacer"></span>
+                <span class="header-menu">
+                    <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        <mat-icon>home</mat-icon>
+                    </a>
+                    <a [routerLink]="['/list']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        <mat-icon>apps</mat-icon>
+                        <span>Planets list</span>
+                    </a>
+                    <a [routerLink]="['/aboutus']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        <mat-icon>person_pin</mat-icon>
+                        <span>About us</span>
+                    </a>
+                </span>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </div>
+</header>

@@ -1,0 +1,14 @@
+.toolbar {
+  &-pagesize {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 15px;
+    }
+
+    ::ng-deep .mat-form-field-infix {
+      width: 50px;
+    }
+  }
+}
